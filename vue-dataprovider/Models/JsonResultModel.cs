@@ -8,7 +8,7 @@
 using System;
 namespace dataprovider.Models
 {
-    public class JsonResult
+    public class JsonResultModel
     {
 
         public int status { get; set; }

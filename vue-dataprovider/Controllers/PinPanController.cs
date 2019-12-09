@@ -6,16 +6,22 @@
 //
 //  Copyright (c) 2019 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using dataprovider.EF;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Net.Http;
+using dataprovider.EF;
+using dataprovider.Models;
+using Newtonsoft.Json;
 
 namespace dataprovider.Controllers
 {
 
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class PinPanController : ControllerBase
     {
         private MyDataDBContext _context;
@@ -25,9 +31,13 @@ namespace dataprovider.Controllers
             _context = context;
         }
 
-        public IEnumerable<TbBsPplb> Get()
+        [HttpGet]
+        public ActionResult<JsonResultModel> GetPPLB()
         {
-            return _context.TbBsPplb.ToList();
+
+            var data = _context.TbBsPplb.ToList();
+
+            return new JsonResultModel { status = 1, data = JsonConvert.SerializeObject(data), msg = "" };
         }
     }
 }
