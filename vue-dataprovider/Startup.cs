@@ -29,11 +29,19 @@ namespace ddataprovider
         {
             services.AddDbContext<MyDataDBContext>(options => options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //解决跨域访问
+            //string[] urls = Configuration.GetSection("AllowCors:AllowAllOrigin").Value.Split(',');
+            services.AddCors(options => options.AddPolicy("Domain", builder => builder.AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowAnyOrigin()
+            .AllowCredentials()));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory logger)
         {
+            logger.AddConsole();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -44,7 +52,17 @@ namespace ddataprovider
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            //解决跨域访问
+            app.UseCors("Domain");
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "api/{controller=Values}/{action=get}/{id?}"
+                    );
+            });
+
+
         }
     }
 }

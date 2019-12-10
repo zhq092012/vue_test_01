@@ -12,7 +12,7 @@ namespace dataprovider.Models
     {
 
         public int status { get; set; }
-        public string data { get; set; }
+        public object data { get; set; }
         public string msg { get; set; }
 
 

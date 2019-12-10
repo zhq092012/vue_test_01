@@ -5,22 +5,18 @@
 //       zhanghuqiang <1169071140@qq.com>
 //
 //  Copyright (c) 2019 
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Net.Http;
 using dataprovider.EF;
 using dataprovider.Models;
+using Microsoft.AspNetCore.Cors;
 using Newtonsoft.Json;
 
 namespace dataprovider.Controllers
 {
 
-    [Route("api/[controller]/[action]")]
+    [EnableCors("Domain")]
+    [Route("api/[Controller]/[Action]")]
     [ApiController]
     public class PinPanController : ControllerBase
     {
@@ -30,14 +26,24 @@ namespace dataprovider.Controllers
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Gets the pplb.
+        /// </summary>
+        /// <returns>The pplb.</returns>
         [HttpGet]
         public ActionResult<JsonResultModel> GetPPLB()
         {
 
-            var data = _context.TbBsPplb.ToList();
+            var pplbs = _context.TbBsPplb.ToList();
+            if (pplbs != null && pplbs.Count > 0)
+            {
+                return new JsonResultModel { status = 0, data = pplbs, msg = "获取品牌列表成功" };
+            }
+            else
+            {
+                return new JsonResultModel { status = 1, data = "", msg = "获取品牌列表失败" };
+            }
 
-            return new JsonResultModel { status = 1, data = JsonConvert.SerializeObject(data), msg = "" };
         }
     }
 }
