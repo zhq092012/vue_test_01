@@ -82,5 +82,32 @@ namespace dataprovider.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        /// <summary>
+        /// 删除品牌列表
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var pplb = await _context.TbBsPplb.FirstOrDefaultAsync(s => s.Id == id);
+                if (pplb != null)
+                {
+                    _context.TbBsPplb.Remove(pplb);
+                    var res = await _context.SaveChangesAsync();
+                    if (res == 1)
+                    {
+                        return Ok();
+                    }
+                }
+                return StatusCode(500, "删除失败");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }
