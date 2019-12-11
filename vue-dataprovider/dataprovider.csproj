@@ -5,12 +5,16 @@
     </PropertyGroup>
     <PropertyGroup Condition=" '$(RunConfiguration)' == 'vue_dataprovider' ">
         <StartAction>Project</StartAction>
-        <LaunchUrl>api/values</LaunchUrl>
+        <LaunchUrl>swagger/index.html</LaunchUrl>
         <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(RunConfiguration)' == 'vue-dataprovider' ">
       <StartAction>Project</StartAction>
       <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+      <DocumentationFile>bin\Debug\netcoreapp2.1\SwaggerDemo.xml</DocumentationFile>
+      <NoWarn>1701;1702</NoWarn>
     </PropertyGroup>
     <ItemGroup>
         <Folder Include="wwwroot\" />
@@ -26,9 +30,25 @@
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1" />
         <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
     </ItemGroup>
     <ItemGroup>
       <Compile Remove="SysConfig.cs" />
       <Compile Remove="sysContext.cs" />
     </ItemGroup>
+    <ProjectExtensions>
+      <MonoDevelop>
+        <Properties>
+          <Policies>
+            <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-csharp" />
+            <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="True" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" scope="text/x-csharp" />
+            <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/plain" />
+            <TextStylePolicy FileWidth="120" RemoveTrailingWhitespace="True" EolMarker="Native" TabWidth="2" TabsToSpaces="True" IndentWidth="2" NoTabsAfterNonTabs="True" scope="text/x-json" />
+            <JSONFormattingPolicy AutoStructureCompletion="True" AutomaticFormatting="True" BracePositions="SemiExpanded" FormatOnPaste="True" scope="text/x-json" />
+            <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-web" />
+            <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-vs" />
+          </Policies>
+        </Properties>
+      </MonoDevelop>
+    </ProjectExtensions>
 </Project>

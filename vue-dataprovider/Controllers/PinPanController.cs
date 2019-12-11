@@ -10,13 +10,17 @@ using Microsoft.AspNetCore.Mvc;
 using dataprovider.EF;
 using dataprovider.Models;
 using Microsoft.AspNetCore.Cors;
-using Newtonsoft.Json;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace dataprovider.Controllers
 {
-
+    /// <summary>
+    /// 品牌API
+    /// </summary>
     [EnableCors("Domain")]
-    [Route("api/[Controller]/[Action]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class PinPanController : ControllerBase
     {
@@ -27,23 +31,56 @@ namespace dataprovider.Controllers
             _context = context;
         }
         /// <summary>
-        /// Gets the pplb.
+        /// 获取全部品牌列表
         /// </summary>
         /// <returns>The pplb.</returns>
         [HttpGet]
-        public ActionResult<JsonResultModel> GetPPLB()
+        public async Task<IActionResult> GetAll()
         {
-
-            var pplbs = _context.TbBsPplb.ToList();
-            if (pplbs != null && pplbs.Count > 0)
+            //OK 返回的是JsonResult
+            try
             {
-                return new JsonResultModel { status = 0, data = pplbs, msg = "获取品牌列表成功" };
+                var pplbs = await _context.TbBsPplb.ToListAsync();
+                if (pplbs != null && pplbs.Count > 0)
+                {
+                    return Ok(pplbs);
+                    //return new JsonResultModel { status = 0, data = pplbs, msg = "获取品牌列表成功" };
+                }
+                return NotFound();
+                //return new JsonResultModel { status = 1, data = "", msg = "获取品牌列表失败" };
             }
-            else
+            catch (System.Exception ex)
             {
-                return new JsonResultModel { status = 1, data = "", msg = "获取品牌列表失败" };
+                return StatusCode(500, ex.Message);
             }
-
+        }
+        /// <summary>
+        /// 添加品牌列表
+        /// </summary>
+        /// <param name="pplb"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Add([FromForm]TbBsPplb pplb)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+                pplb.Ctime = DateTime.Now;
+                _context.TbBsPplb.Add(pplb);
+                var res = await _context.SaveChangesAsync();
+                if (res == 1)
+                {
+                    return Ok();
+                }
+                return StatusCode(500, "添加失败");
+            }
+            catch (System.Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }
