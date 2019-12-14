@@ -15,3 +15,6 @@
 /Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.RazorTargetAssemblyInfo.cache
 /Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.dll
 /Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.pdb
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.Models.dll
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.Models.pdb
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.csproj.CopyComplete

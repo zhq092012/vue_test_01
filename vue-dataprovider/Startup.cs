@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using dataprovider.EF;
+using dataprovider.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,7 +33,7 @@ namespace ddataprovider
         public void ConfigureServices(IServiceCollection services)
         {
             //注入数据库上下文
-            services.AddDbContext<MyDataDBContext>(options => options.UseMySql(Configuration.GetConnectionString("MySqlConnection")));
+            services.AddDbContext<ProvContext>(options => options.UseMySql(Configuration.GetConnectionString("mysql")));
             services.AddMvc(Options =>
             {
                 Options.ReturnHttpNotAcceptable = true;//如果想要的格式不支持，那么就会返回406 Not Acceptable

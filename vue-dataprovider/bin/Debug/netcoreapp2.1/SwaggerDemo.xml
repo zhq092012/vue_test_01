@@ -15,7 +15,7 @@
             </summary>
             <returns>The pplb.</returns>
         </member>
-        <member name="M:dataprovider.Controllers.PinPanController.Add(dataprovider.EF.TbBsPplb)">
+        <member name="M:dataprovider.Controllers.PinPanController.Add(dataprovider.Models.TbBsPplb)">
             <summary>
             添加品牌列表
             </summary>

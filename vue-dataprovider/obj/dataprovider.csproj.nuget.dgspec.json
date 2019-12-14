@@ -4,6 +4,74 @@
     "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/dataprovider.csproj": {}
   },
   "projects": {
+    "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/dataprovider.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/dataprovider.Models.csproj",
+        "projectName": "dataprovider.Models",
+        "projectPath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/dataprovider.Models.csproj",
+        "packagesPath": "/Users/zhanghuqiang/.nuget/packages/",
+        "outputPath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/zhanghuqiang/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/dataprovider.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +95,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/dataprovider.Models.csproj": {
+                "projectPath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Models/dataprovider.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

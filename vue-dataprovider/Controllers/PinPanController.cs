@@ -7,7 +7,6 @@
 //  Copyright (c) 2019 
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using dataprovider.EF;
 using dataprovider.Models;
 using Microsoft.AspNetCore.Cors;
 using System.Threading.Tasks;
@@ -24,9 +23,9 @@ namespace dataprovider.Controllers
     [ApiController]
     public class PinPanController : ControllerBase
     {
-        private MyDataDBContext _context;
+        private ProvContext _context;
 
-        public PinPanController(MyDataDBContext context)
+        public PinPanController(ProvContext context)
         {
             _context = context;
         }
