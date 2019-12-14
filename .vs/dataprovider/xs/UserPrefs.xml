@@ -1,35 +1,26 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{DB61D377-D2EC-4819-88CD-0F1A73509273}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="vue-dataprovider/appsettings.json">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{F5D5AB6A-34AD-4338-82B6-08DF08DF3543}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Service/IRepository.cs">
     <Files>
-      <File FileName="dataprovider.Models/ProvContext.cs" Line="20" Column="100" />
-      <File FileName="dataprovider.Web/Startup.cs" Line="30" Column="50" />
-      <File FileName="dataprovider.Web/Program.cs" Line="1" Column="1" />
-      <File FileName="dataprovider.Models/ProvContextFactory.cs" Line="20" Column="67" />
-      <File FileName="dataprovider.Web/appsettings.json" Line="9" Column="54" />
-      <File FileName="dataprovider.Web/Controllers/HomeController.cs" Line="18" Column="1" />
-      <File FileName="vue-dataprovider/Controllers/PinPanController.cs" Line="27" Column="20" />
-      <File FileName="dataprovider.Web/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="dataprovider.Web/Controllers/PplbController.cs" Line="25" Column="23" />
-      <File FileName="dataprovider.Web/Views/Pplb/Index.cshtml" Line="11" Column="1" />
-      <File FileName="vue-dataprovider/Startup.cs" Line="1" Column="1" />
-      <File FileName="vue-dataprovider/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="vue-dataprovider/appsettings.json" Line="10" Column="4" />
+      <File FileName="dataprovider.Service/Repository.cs" Line="16" Column="38" />
+      <File FileName="dataprovider.Web/Controllers/StudentController.cs" Line="21" Column="1" />
+      <File FileName="dataprovider.Web/Controllers/PplbController.cs" Line="1" Column="1" />
+      <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="11" Column="18" />
+      <File FileName="dataprovider.Web/Startup.cs" Line="37" Column="1" />
+      <File FileName="dataprovider.Web/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="vue-dataprovider/Startup.cs" Line="36" Column="1" />
+      <File FileName="dataprovider.Service/IRepository.cs" Line="15" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="dataprovider" expanded="True">
-            <Node name="dataprovider" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+            <Node name="dataprovider.Service" expanded="True">
+              <Node name="IRepository.cs" selected="True" />
             </Node>
             <Node name="dataprovider.Web" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Pplb" expanded="True" />
+                <Node name="Student" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -42,7 +33,12 @@
   <MonoDevelop.Ide.ItemProperties.dataprovider.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/Controllers/PinPanController.cs" relfile="vue-dataprovider/Controllers/PinPanController.cs" line="40" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/Controllers/PinPanController.cs" relfile="vue-dataprovider/Controllers/PinPanController.cs" line="30" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/Startup.cs" relfile="vue-dataprovider/Startup.cs" line="36" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Web/Controllers/StudentController.cs" relfile="dataprovider.Web/Controllers/StudentController.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

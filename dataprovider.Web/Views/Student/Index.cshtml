@@ -1,0 +1,14 @@
+﻿@using dataprovider.Web.ViewModels
+@model IEnumerable<StudentModel>
+@{
+  Layout = null;
+}
+<div>
+  <ul>
+  @foreach (var item in Model)
+  {
+    <li>@item.Name</li>
+    <li>@item.Age</li>
+  }
+  </ul>
+</div>

@@ -16,8 +16,12 @@
       <ProjectReference Include="..\dataprovider.Models\dataprovider.Models.csproj">
         <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
       </ProjectReference>
+      <ProjectReference Include="..\dataprovider.Service\dataprovider.Service.csproj">
+        <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+      </ProjectReference>
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Views\Pplb\" />
+      <Folder Include="Views\Student\" />
     </ItemGroup>
 </Project>

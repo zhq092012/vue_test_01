@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using dataprovider.Models;
+using dataprovider.Service;
 
 namespace dataprovider.Web
 {
@@ -29,12 +30,13 @@ namespace dataprovider.Web
       services.AddDbContext<ProvContext>(options => options.UseMySql(
         Configuration.GetConnectionString("mysql")
         ));
-      services.Configure<CookiePolicyOptions>(options =>
-      {
-        // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-        options.CheckConsentNeeded = context => true;
-        options.MinimumSameSitePolicy = SameSiteMode.None;
-      });
+      services.AddScoped<IRepository<Student>, Repository<Student>>();
+      //services.Configure<CookiePolicyOptions>(options =>
+      //{
+      //  // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+      //  options.CheckConsentNeeded = context => true;
+      //  options.MinimumSameSitePolicy = SameSiteMode.None;
+      //});
 
 
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -55,7 +57,7 @@ namespace dataprovider.Web
 
       app.UseHttpsRedirection();
       app.UseStaticFiles();
-      app.UseCookiePolicy();
+      //app.UseCookiePolicy();
 
       app.UseMvc(routes =>
       {

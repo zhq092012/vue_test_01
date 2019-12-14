@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataprovider.Web", "datapro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataprovider.Models", "dataprovider.Models\dataprovider.Models.csproj", "{D676F2B5-8DF3-4D37-B273-E009D167FFA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataprovider.Service", "dataprovider.Service\dataprovider.Service.csproj", "{053CAB1E-014E-434B-8DEA-9E1C27F8B939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{D676F2B5-8DF3-4D37-B273-E009D167FFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D676F2B5-8DF3-4D37-B273-E009D167FFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D676F2B5-8DF3-4D37-B273-E009D167FFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053CAB1E-014E-434B-8DEA-9E1C27F8B939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053CAB1E-014E-434B-8DEA-9E1C27F8B939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053CAB1E-014E-434B-8DEA-9E1C27F8B939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053CAB1E-014E-434B-8DEA-9E1C27F8B939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

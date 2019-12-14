@@ -13,6 +13,7 @@ namespace dataprovider.Models
     public ProvContext(DbContextOptions options) : base(options)
     {
     }
+    public virtual DbSet<Student> Students { get; set; }
     public virtual DbSet<TbBsPplb> TbBsPplb { get; set; }
 
     //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
