@@ -14349,8 +14349,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.web/Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.web/Views/_ViewImports.cshtml",
       "TargetPath": "Views/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.web/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],
