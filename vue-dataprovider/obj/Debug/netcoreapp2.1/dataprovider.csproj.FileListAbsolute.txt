@@ -1,0 +1,17 @@
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/appsettings.Development.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/appsettings.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/Properties/launchSettings.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/SwaggerDemo.xml
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.deps.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.runtimeconfig.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.runtimeconfig.dev.json
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.dll
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/bin/Debug/netcoreapp2.1/dataprovider.pdb
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.csprojAssemblyReference.cache
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.RazorAssemblyInfo.cache
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.RazorAssemblyInfo.cs
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.AssemblyInfoInputs.cache
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.AssemblyInfo.cs
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.RazorTargetAssemblyInfo.cache
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.dll
+/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/vue-dataprovider/obj/Debug/netcoreapp2.1/dataprovider.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dataprovider</name>
+    </assembly>
+    <members>
+        <member name="T:dataprovider.Controllers.PinPanController">
+            <summary>
+            品牌API
+            </summary>
+        </member>
+        <member name="M:dataprovider.Controllers.PinPanController.GetAll">
+            <summary>
+            获取全部品牌列表
+            </summary>
+            <returns>The pplb.</returns>
+        </member>
+        <member name="M:dataprovider.Controllers.PinPanController.Add(dataprovider.EF.TbBsPplb)">
+            <summary>
+            添加品牌列表
+            </summary>
+            <param name="pplb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dataprovider.Controllers.PinPanController.Delete(System.Int32)">
+            <summary>
+            删除品牌列表
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
