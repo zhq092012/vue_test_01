@@ -1,0 +1,10 @@
+﻿@model List<dataprovider.Models.TbBsPplb>;
+@{
+  Layout = null;
+}
+@foreach (var item in Model)
+{
+  <p>@item.Id</p>
+   <p>@item.Name</p>
+    <p>@item.Ctime</p>
+}
