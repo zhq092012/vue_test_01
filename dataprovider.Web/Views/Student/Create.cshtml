@@ -1,0 +1,22 @@
+﻿@using dataprovider.Models
+@model Student
+<h1>添加学生</h1>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Birthday"></label>
+        <input asp-for="Birthday" type="date" />
+        <span asp-validation-for="Birthday"></span>
+    </div>
+    <div>
+        <label asp-for="Gender"></label>
+        <select asp-for="Gender" asp-items="Html.GetEnumSelectList<GenderEnum>()"></select>
+        <span asp-validation-for="Gender"></span>
+    </div>
+    <input type="submit" value="保存" />
+</form>

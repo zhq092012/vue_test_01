@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using dataprovider.Models;
 
 namespace dataprovider.Models.migrations
 {
     [DbContext(typeof(ProvContext))]
-    partial class ProvContextModelSnapshot : ModelSnapshot
+    [Migration("20191215035700_mi03")]
+    partial class mi03
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

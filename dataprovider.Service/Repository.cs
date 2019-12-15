@@ -16,14 +16,32 @@ namespace dataprovider.Service
   public class Repository<T> : IRepository<T> where T : class
   {
     private ProvContext context;
+    private readonly DbSet<T> dbSet;
     public Repository(ProvContext _context)
     {
       context = _context;
+      dbSet = context.Set<T>();
     }
 
-    public async Task<IEnumerable<T>> GetAll()
+    public IEnumerable<T> GetAll()
     {
-      return await context.Set<T>().ToListAsync();
+      return dbSet;
+    }
+
+    public T GetById(int id)
+    {
+      return dbSet.Find(id);
+    }
+
+    public bool Add(T entity, bool isSave = false)
+    {
+      dbSet.Add(entity);
+      if (isSave)
+      {
+        return context.SaveChanges() > 0;
+      }
+      return false;
+
     }
   }
 

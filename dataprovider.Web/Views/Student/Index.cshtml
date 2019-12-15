@@ -1,14 +1,26 @@
 ﻿@using dataprovider.Web.ViewModels
-@model IEnumerable<StudentModel>
+@model IEnumerable<StudentViewModel>
 @{
-  Layout = null;
+    Layout = null;
 }
 <div>
-  <ul>
-  @foreach (var item in Model)
-  {
-    <li>@item.Name</li>
-    <li>@item.Age</li>
-  }
-  </ul>
+    <p>
+        创建学生
+        <div>
+            <a asp-action="Create">添加</a>
+        </div>
+    </p>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @item.Name
+                @item.Age
+                @item.Gender
+                <a asp-action="Detail" asp-route-id="@item.Id">明细</a>
+            </li>
+
+            @*@Html.ActionLink("详细", "Detail", "Student", new { @id = item.Id })*@
+        }
+    </ul>
 </div>
