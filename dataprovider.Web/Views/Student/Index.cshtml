@@ -1,8 +1,4 @@
-﻿@using dataprovider.Web.ViewModels
-@model IEnumerable<StudentViewModel>
-@{
-    Layout = null;
-}
+﻿@model IEnumerable<StudentViewModel>
 <div>
     <p>
         创建学生
@@ -10,17 +6,12 @@
             <a asp-action="Create">添加</a>
         </div>
     </p>
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li>
-                @item.Name
-                @item.Age
-                @item.Gender
-                <a asp-action="Detail" asp-route-id="@item.Id">明细</a>
-            </li>
+    @*@Html.PartialAsync("_StudentTableView",Model)*@
+    @*使用TagHelper*@
+    <partial name="_StudentTableView" for="@Model"/>
+    @*视图组件*@
+    @*@await Component.InvokeAsync("Welcome")*@
 
-            @*@Html.ActionLink("详细", "Detail", "Student", new { @id = item.Id })*@
-        }
-    </ul>
+    @*使用TagHelper加载视图组件，必须在_ViewImports.cshtml中引用当前项目*@
+    <vc:welcome></vc:welcome>
 </div>

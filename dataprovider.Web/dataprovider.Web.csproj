@@ -23,5 +23,8 @@
     <ItemGroup>
       <Folder Include="Views\Pplb\" />
       <Folder Include="Views\Student\" />
+      <Folder Include="ViewComponents\" />
+      <Folder Include="Views\Shared\Components\" />
+      <Folder Include="Views\Shared\Components\Welcome\" />
     </ItemGroup>
 </Project>

@@ -1,30 +1,36 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{F5D5AB6A-34AD-4338-82B6-08DF08DF3543}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Models/Student.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Web/Views/_ViewImports.cshtml">
     <Files>
-      <File FileName="dataprovider.Service/IRepository.cs" Line="21" Column="36" />
-      <File FileName="dataprovider.Web/Controllers/StudentController.cs" Line="59" Column="6" />
-      <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="16" Column="17" />
-      <File FileName="dataprovider.Web/Views/Student/Detail.cshtml" Line="7" Column="26" />
-      <File FileName="dataprovider.Web/Views/Student/Create.cshtml" Line="2" Column="12" />
-      <File FileName="dataprovider.Models/Student.cs" Line="10" Column="7" />
+      <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="15" Column="54" />
+      <File FileName="dataprovider.Web/Views/Student/_StudentTableView.cshtml" Line="8" Column="19" />
+      <File FileName="dataprovider.Web/ViewComponents/WelcomeViewComponent.cs" Line="10" Column="27" />
+      <File FileName="dataprovider.Web/Views/Shared/Components/Default.cshtml" Line="2" Column="16" />
+      <File FileName="dataprovider.Web/Views/Shared/Components/Welcome/Default.cshtml" Line="1" Column="1" />
+      <File FileName="dataprovider.Web/Views/_ViewImports.cshtml" Line="6" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="dataprovider" expanded="True">
-            <Node name="dataprovider.Models" expanded="True">
-              <Node name="Student.cs" selected="True" />
-            </Node>
+            <Node name="dataprovider.Models" expanded="True" />
             <Node name="dataprovider.Service" expanded="True" />
             <Node name="dataprovider.Web" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
+              <Node name="ViewComponents" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Welcome" expanded="True" />
+                  </Node>
+                </Node>
                 <Node name="Student" expanded="True" />
+                <Node name="_ViewImports.cshtml" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

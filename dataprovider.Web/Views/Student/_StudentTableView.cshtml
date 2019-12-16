@@ -1,0 +1,22 @@
+﻿@model IEnumerable<StudentViewModel>
+<table>
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td> 
+            <td>@item.Age</td>
+            <td>@item.Gender</td>
+           <td><a asp-action="Detail" asp-route-id="@item.Id">明细</a></td>
+        </tr>
+
+        @*@Html.ActionLink("详细", "Detail", "Student", new { @id = item.Id })*@
+    }
+</table>
