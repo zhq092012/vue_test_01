@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Models/Student.cs">
     <Files>
       <File FileName="dataprovider.Service/IRepository.cs" Line="21" Column="36" />
-      <File FileName="dataprovider.Web/Controllers/StudentController.cs" Line="59" Column="56" />
+      <File FileName="dataprovider.Web/Controllers/StudentController.cs" Line="59" Column="6" />
       <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="16" Column="17" />
       <File FileName="dataprovider.Web/Views/Student/Detail.cshtml" Line="7" Column="26" />
       <File FileName="dataprovider.Web/Views/Student/Create.cshtml" Line="2" Column="12" />
@@ -26,18 +26,15 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.dataprovider PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.dataprovider.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.dataprovider.Web PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/zhanghuqiang/Documents/ChromeTools/vue_test_01/dataprovider.Web/Controllers/StudentController.cs" relfile="dataprovider.Web/Controllers/StudentController.cs" line="55" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/GitHub/vue_test_01/dataprovider.Web/Controllers/StudentController.cs" relfile="dataprovider.Web/Controllers/StudentController.cs" line="55" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
