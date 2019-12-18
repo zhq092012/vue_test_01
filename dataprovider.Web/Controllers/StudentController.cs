@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using dataprovider.Models;
 using dataprovider.Service;
 using dataprovider.Web.ViewModels;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;using Microsoft.AspNetCore.Mvc;
 
 namespace dataprovider.Web.Controllers
 {
@@ -43,7 +43,12 @@ namespace dataprovider.Web.Controllers
 
       return View(stuViewModel);
     }
+    /// <summary>
+    /// 添加一个学生，并使用授权
+    /// </summary>
+    /// <returns>The create.</returns>
     [HttpGet]
+    [Authorize]
     public IActionResult Create()
     {
       return View();
@@ -54,6 +59,7 @@ namespace dataprovider.Web.Controllers
     /// <param name="student"></param>
     /// <returns></returns>
     [HttpPost]
+    [Authorize]
     [ValidateAntiForgeryToken]
     public IActionResult Create([FromForm]Student student)
     {

@@ -26,5 +26,6 @@
       <Folder Include="ViewComponents\" />
       <Folder Include="Views\Shared\Components\" />
       <Folder Include="Views\Shared\Components\Welcome\" />
+      <Folder Include="Views\Account\" />
     </ItemGroup>
 </Project>

@@ -1,36 +1,32 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{F5D5AB6A-34AD-4338-82B6-08DF08DF3543}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Web/Views/_ViewImports.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dataprovider.Web/Controllers/StudentController.cs">
     <Files>
-      <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="15" Column="54" />
-      <File FileName="dataprovider.Web/Views/Student/_StudentTableView.cshtml" Line="8" Column="19" />
-      <File FileName="dataprovider.Web/ViewComponents/WelcomeViewComponent.cs" Line="10" Column="27" />
-      <File FileName="dataprovider.Web/Views/Shared/Components/Default.cshtml" Line="2" Column="16" />
-      <File FileName="dataprovider.Web/Views/Shared/Components/Welcome/Default.cshtml" Line="1" Column="1" />
-      <File FileName="dataprovider.Web/Views/_ViewImports.cshtml" Line="6" Column="17" />
+      <File FileName="dataprovider.Models/ProvContext.cs" Line="7" Column="18" />
+      <File FileName="dataprovider.Web/Startup.cs" Line="63" Column="37" />
+      <File FileName="dataprovider.Web/Controllers/AccountController.cs" Line="70" Column="5" />
+      <File FileName="dataprovider.Web/Views/Shared/_Layout.cshtml" Line="38" Column="1" />
+      <File FileName="dataprovider.Web/Views/Student/Index.cshtml" Line="1" Column="1" />
+      <File FileName="dataprovider.Web/Controllers/StudentController.cs" Line="63" Column="16" />
+      <File FileName="dataprovider.Web/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="dataprovider.Web/Views/_ViewImports.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="dataprovider" expanded="True">
-            <Node name="dataprovider.Models" expanded="True" />
-            <Node name="dataprovider.Service" expanded="True" />
+            <Node name="dataprovider.Models" expanded="True">
+              <Node name="migrations" expanded="True" />
+            </Node>
             <Node name="dataprovider.Web" expanded="True">
-              <Node name="ViewComponents" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentController.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="Welcome" expanded="True" />
-                  </Node>
-                </Node>
                 <Node name="Student" expanded="True" />
-                <Node name="_ViewImports.cshtml" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -40,7 +36,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/zhanghuqiang/Documents/GitHub/vue_test_01/dataprovider.Web/Controllers/StudentController.cs" relfile="dataprovider.Web/Controllers/StudentController.cs" line="55" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/GitHub/vue_test_01/dataprovider.Web/Controllers/StudentController.cs" relfile="dataprovider.Web/Controllers/StudentController.cs" line="60" column="1" />
+      <Breakpoint file="/Users/zhanghuqiang/Documents/GitHub/vue_test_01/dataprovider.Web/Controllers/AccountController.cs" relfile="dataprovider.Web/Controllers/AccountController.cs" line="33" column="18" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
