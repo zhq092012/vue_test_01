@@ -339,3 +339,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 .vs/dataprovider/xs/sqlite3/storage.ide
+.vs/dataprovider/xs/UserPrefs.xml
